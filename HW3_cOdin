@@ -1,5 +1,6 @@
 cOdin is a quiz app we made during the first semester. The application’s purpose serves both teachers and students and it can be used for 
 quiz tests during courses or labs. There are a few design patterns that can be implemented:
+
 Creational Patterns
 1.	For creating questions, we can use Factory: questions can be single choice, multiple choice or open answer. The different type of 
 objects will be managed by the same interface and the user won’t see the complexity behind their creation.
@@ -13,7 +14,6 @@ Structural Patterns
 2.	Proxy – to decide the user interface/actions available to a user according to their user type (the students won’t have the same 
 functionalities as teachers and vice versa)
 3.	Composite – to store in a hierarchical way the tests, questions and answers 
-
 
 Behavioral Patterns: 
 1.	State – the mark of each test is computed by taking into account whether the teacher chooses to give points to partially correct 
