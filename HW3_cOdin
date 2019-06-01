@@ -1,0 +1,26 @@
+cOdin is a quiz app we made during the first semester. The application’s purpose serves both teachers and students and it can be used for 
+quiz tests during courses or labs. There are a few design patterns that can be implemented:
+Creational Patterns
+1.	For creating questions, we can use Factory: questions can be single choice, multiple choice or open answer. The different type of 
+objects will be managed by the same interface and the user won’t see the complexity behind their creation.
+2.	For creating tests, we can use Prototype: it would be useful to clone a new instance of an already existing prototype due to the time
+consuming REST calls. 
+3.	For the creation of a user, we can use Builder: we have mandatory attributes(email, password, name)  and optional attributes (group, 
+university and so on). 
+
+Structural Patterns
+1.	Decorator – to add extra attributes to questions (animations/images, feedback and so on)
+2.	Proxy – to decide the user interface/actions available to a user according to their user type (the students won’t have the same 
+functionalities as teachers and vice versa)
+3.	Composite – to store in a hierarchical way the tests, questions and answers 
+
+
+Behavioral Patterns: 
+1.	State – the mark of each test is computed by taking into account whether the teacher chooses to give points to partially correct 
+answers or not and this option (state) can be selected by the teacher at the beginning of each test.
+2.	Memento – the tests are customizable (the teacher can add/delete questions, shuffle them or update the timer) so this would help us
+save/restore multiple tests
+3.	Observer – this would be suitable because the teacher’s group gradebook is updated after the students finish the test (so he has a 
+clear and updated report for all the students in his group), the history of the student’s tests is updated and can be seen on his profile,
+the test result is sent to the student via email.
+
